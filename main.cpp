@@ -66,6 +66,8 @@ public:
 class SuffixTrie {
 public:
     SuffixTrie(char *word) {
+        int r;
+        for(r = 0; word[r]; r++);
         root = new TrieNode();
         Suffix(0, strlen(word), word);
     }
